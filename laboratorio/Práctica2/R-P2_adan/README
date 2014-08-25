@@ -1,0 +1,16 @@
+Adan Edoardo Herrera Hidalgo
+306775954
+
+Ejercicio teóricos
+1. 
+ -Mandar un mensaje muy largo
+ -Utilizar una codificación distinta de caracteres
+
+2. Si no se llamana accept el servidor no "escuchará" peticiones de los clientes. 
+Los datos no los recibirá nadie, por que ni siquiera podrá establecer conecxión con un cliente.
+
+Ejercicio prácticos
+
+2. El socket expirará hasta que la comunicación se haya temrinado; o sea que el resto de los bytes se podrán mandarán al cliente.
+
+En el caso de mi práctica, manda un error debido a que todo está en un loop infinito pero cada vez que empieza el loop utiliza al socket, pero como se cerró al cabo de mandar el primer byte, manda el error.
